@@ -1,0 +1,27 @@
+body {
+	background-color: #899679;
+	padding: 60px;
+}
+
+.wrapper {
+	max-width: 1431px;
+	margin: 0 auto;
+}
+
+.mirror {
+	width: 1431px;
+	max-width: 1432px;
+	position: relative;
+}
+
+
+
+.eyeshadow {
+	position: absolute;
+	width: 66px;
+	height: 55px;
+	margin-top: 271.88px;
+	margin-left: 439.76px;
+	border-width: 1px;
+	border-color: black;
+}
