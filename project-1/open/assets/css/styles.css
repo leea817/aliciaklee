@@ -1,27 +1,50 @@
+* {
+	padding-top: 39px;
+	margin: auto;
+
+}
+
 body {
 	background-color: #899679;
-	padding: 60px;
 }
 
 .wrapper {
-	max-width: 1431px;
-	margin: 0 auto;
+	margin-left: -35px;
 }
 
-.mirror {
-	width: 1431px;
-	max-width: 1432px;
-	position: relative;
+.image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
-
-.eyeshadow {
+.image > .mirror {
 	position: absolute;
-	width: 66px;
-	height: 55px;
-	margin-top: 271.88px;
-	margin-left: 439.76px;
+	top: 20px;
+}
+
+#shelf {
+	position: relative;
+	width: 100%;
+
+
+}
+
+.text {
+	display: block;
+	margin: auto;
+}
+
+
+#product {
+	position: absolute;
+	width: 65px;
+	height: 15px;
+	top: 256px;
+	left: 293px;
 	border-width: 1px;
+	border-style: solid;
 	border-color: black;
 }
+

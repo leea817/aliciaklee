@@ -1,17 +1,19 @@
+* {
+	padding-top: 18px;
+}
+
 body {
 	background-color: #899679;
-
 }
 
 .wrapper {
-	max-width: 1027px;
-	margin: 0 auto;
-	margin-top: 22px;
-	padding-left: 80px;
+	margin-left: 5px;
 }
 
 .mirror {
-	width: 1027px;
-	max-width: 1027px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
