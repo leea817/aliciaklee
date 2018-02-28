@@ -31,9 +31,10 @@ body {
 
 }
 
-.text {
+#text {
 	display: block;
-	margin: auto;
+	margin-left: 278px;
+	margin-top: -7px;
 }
 
 
