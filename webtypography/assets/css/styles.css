@@ -50,13 +50,13 @@ body {
 	position: absolute;
 	text-align: center;
 	font-size: 24px;
-	top: 590px;
+	top: 600px;
 	left: 594px;
 }
 .red {
 	position: absolute;
 	top: 830px;
-	left: 900px;
+	left: 790px;
 }
 .initials1 {
 	position: absolute;
@@ -81,7 +81,7 @@ body {
 	font-size: 140px;
 	letter-spacing: 2px;
 	margin-left: -1150px;
-	margin-top: -1890px;
+	margin-top: -1656px;
 	transform: rotate(-90deg);
 }
 
@@ -90,7 +90,7 @@ body {
 	font-size: 140px;
 	letter-spacing: 2px;
 	transform: rotate(90deg);
-	margin-top: 340px;
+	margin-top: -660px;
 	margin-left: 1150px;
 
 }
