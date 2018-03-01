@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+	background-color: #CF8481;
+	align-content: center;
+}
+#backbutton {
+	position: absolute;
+	width: 103px;
+	height: 90px;
+	top: 13px;
+	left: 33px;
+	/*border-width: 1px;
+	border-style: solid;
+	border-color: black;*/
+}

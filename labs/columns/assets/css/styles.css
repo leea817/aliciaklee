@@ -1,0 +1,16 @@
+.container {
+	width: ;
+	color: red;
+}
+
+.row {
+	color: blue;
+	border-style: solid;
+}
+
+.column {
+	color: red;
+	border-style: solid;
+	border-color: red;
+	border-width: 2px;
+}
