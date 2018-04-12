@@ -1,15 +1,32 @@
 $(document).ready(function(){
+
    $('.box').mouseover(function(){
       $(this).addClass('hover');
    });
    $('.box').mouseout(function(){
       $(this).removeClass('hover');
    });
+
+   var $allNavItems = $('.nav-item');
+
+   var randomIndex = getRandomInt(allNavItems.length-1);
+
+   $allNavItems[randomIndex].click();
 });
-/*
-$('.weather-bar').click(function(){
-	$('.weather-bar').slideToggle();
-});*/
+
+function getRandomInt(max) {
+  Math.floor(Math.random() * Math.floor(max));
+}
+
+
+$( "#nav-toggle" ).click(function() {
+  $( "#mobile-nav" ).toggleClass( "show-nav" );
+  $( this ).toggleClass( "close-menu" );
+});
+
+$('.youtube').click(function(){
+	$('.audio').pause(); 
+});
 
 $('.nav-item').click(function() {
 	var button_name = $(this).data('button');
@@ -19,6 +36,11 @@ $('.nav-item').click(function() {
 
 	$('.nav-item').removeClass('active'); //so that it doesnt stay black once you click it aka active, this is looking at all items on the page. in fact, it is making an array. 
 	$(this).addClass('active');
+  	
+
+  // $('.hide').removeClass('show');
+  // $('#' + button_name).addClass('show');
+  // $(window).scrollTop(0);
 
 	if (button_name== 'lone') {
 		$('.lonely-abyss').show();
@@ -48,6 +70,7 @@ $('.nav-item').click(function() {
 		$('.audio11 audio')[0].pause(); 
 		$('.audio12 audio')[0].pause(); 
 		$('.audio13 audio')[0].pause(); 
+		$(window).scrollTop(0);
 	}
 	if (button_name== 'trip') {
 		$('.im-tripping').show();
@@ -77,6 +100,7 @@ $('.nav-item').click(function() {
 		$('.audio11 audio')[0].pause(); 
 		$('.audio12 audio')[0].pause(); 
 		$('.audio13 audio')[0].pause(); 
+		$(window).scrollTop(0);
 	}
 	if (button_name== 'serene') {
 		$('.serenity').show();
@@ -106,6 +130,7 @@ $('.nav-item').click(function() {
 		$('.audio11 audio')[0].pause(); 
 		$('.audio12 audio')[0].pause(); 
 		$('.audio13 audio')[0].pause(); 
+		$(window).scrollTop(0);
 	}
 	if (button_name== 'haha') {
 		$('.hahaha').show();
@@ -135,6 +160,7 @@ $('.nav-item').click(function() {
 		$('.audio11 audio')[0].pause(); 
 		$('.audio12 audio')[0].pause(); 
 		$('.audio13 audio')[0].pause(); 
+		$(window).scrollTop(0);
 	}
 	if (button_name== 'night') {
 		$('.silent-night').show();
@@ -164,6 +190,7 @@ $('.nav-item').click(function() {
 		$('.audio11 audio')[0].pause(); 
 		$('.audio12 audio')[0].pause(); 
 		$('.audio13 audio')[0].pause(); 
+		$(window).scrollTop(0);
 	}
 	if (button_name== 'comfort') {
 		$('.comfortable').show();
@@ -193,6 +220,7 @@ $('.nav-item').click(function() {
 		$('.audio11 audio')[0].pause(); 
 		$('.audio12 audio')[0].pause(); 
 		$('.audio13 audio')[0].pause(); 
+		$(window).scrollTop(0);
 	}
 	if (button_name== 'dark') {
 		$('.dark').show();
@@ -222,6 +250,7 @@ $('.nav-item').click(function() {
 		$('.audio11 audio')[0].pause(); 
 		$('.audio12 audio')[0].pause(); 
 		$('.audio13 audio')[0].pause(); 
+		$(window).scrollTop(0);
 	}
 	if (button_name== 'live') {
 		$('.lively').show();
@@ -251,6 +280,7 @@ $('.nav-item').click(function() {
 		$('.audio11 audio')[0].pause(); 
 		$('.audio12 audio')[0].pause(); 
 		$('.audio13 audio')[0].pause(); 
+		$(window).scrollTop(0);
 	}
 	if (button_name== 'photo') {
 		$('.photography').show();
@@ -280,6 +310,7 @@ $('.nav-item').click(function() {
 		$('.audio11 audio')[0].pause(); 
 		$('.audio12 audio')[0].pause(); 
 		$('.audio13 audio')[0].pause(); 
+		$(window).scrollTop(0);
 	}
 	if (button_name== 'vid') {
 		$('.video').show();
@@ -309,6 +340,7 @@ $('.nav-item').click(function() {
 		$('.audio11 audio')[0].pause(); 
 		$('.audio12 audio')[0].pause(); 
 		$('.audio13 audio')[0].pause(); 
+		$(window).scrollTop(0);
 	}
 	if (button_name== 'writing') {
 		$('.writingtext').show();
@@ -338,6 +370,7 @@ $('.nav-item').click(function() {
 		$('.audio10 audio')[0].pause(); 
 		$('.audio12 audio')[0].pause(); 
 		$('.audio13 audio')[0].pause(); 
+		$(window).scrollTop(0);
 	}
 	if (button_name== 'illust') {
 		$('.illustration').show();
@@ -367,6 +400,7 @@ $('.nav-item').click(function() {
 		$('.audio10 audio')[0].pause(); 
 		$('.audio11 audio')[0].pause(); 
 		$('.audio12 audio')[0].pause(); 
+		$(window).scrollTop(0);
 	}
 	if (button_name== 'graph') {
 		$('.graphics').show();
@@ -394,7 +428,8 @@ $('.nav-item').click(function() {
 		$('.audio9 audio')[0].pause(); 
 		$('.audio10 audio')[0].pause(); 
 		$('.audio11 audio')[0].pause(); 
-		$('.audio13 audio')[0].pause(); 
+		$('.audio13 audio')[0].pause();
+		$(window).scrollTop(0); 
 	}
 	
 	if (button_name== 'all') {
@@ -424,18 +459,8 @@ $('.nav-item').click(function() {
 		$('.audio13 audio')[0].pause(); 
 		$('.audio10 audio')[0].pause(); 
 		$('.audio11 audio')[0].pause(); 
-		$('.audio12 audio')[0].pause(); 
-	}box
-
-
+		$('.audio12 audio')[0].pause();
+		$(window).scrollTop(0); 
+	}
+      
 });
-
-$('.close-button').click(function() {
-	$('.lightbox').addClass('hide');
-	// before we got into beyonece by lightbox and removing hide, so to get out we need to do the opposite aka add hide
-	$('audio')[0].pause(); 
-	$('.nav-item.beyonce').removeClass('active');
-})
-	
-
-
